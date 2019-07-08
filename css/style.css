@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+li {
+  list-style: none;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo img {
+  padding-left: 20px;
+  width: 120px;
+  height: 100px;
+}
+
+header {
+  background: #f6f6f6;
+  padding: 22px 0;
+}
+
+.header-container {
+  width: 90%;
+  margin: o auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-container a {
+  color: #000;
+  font-size: 16px;
+  padding: 27px 6px;
+  margin-right: 63px;
+}
+
+.header-container a:hover {
+  background-color: yellow;
+}
+
+#menu-checkbox {
+  display: none;
+}
+
+ul {
+  display: flex;
+}
+
+nav {
+  margin-top: 20px;
+}
+
+.top-slide {
+  background: url(../img/slider_bg.jpg) no-repeat;
+  padding-top: 120px;
+  padding-bottom: 280px;
+}
+.top-slide h2 {
+  background: yellow;
+  display: inline;
+  font-size: 70px;
+  padding: 0 13px;
+}
+
+.top-slide p {
+  font-size: 24px;
+  background: gray;
+  display: inline;
+  color: #fff;
+  padding: 0 4px;
+}
+
+.top-slide :nth-child(2) {
+  margin-bottom: 10px;
+}
+
+.top-container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.specialize {
+  margin-top: 50px;
+}
+
+.specialize-cards {
+  display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    width: 60%;
+    margin: 20px auto;
+    justify-content: space-between;
+}
+
+.specialize-container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.specialize-container h3 {
+  text-transform: uppercase;
+  font-size: 36px;
+}
+
+.specialize-container p {
+  font-size: 24px;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+.card {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  width: 300px;
+  height: 350px;
+}
+
+.top-card img {
+  width: 150px;
+  height: 200px;
+}
+
+.bottom-card {
+  background: grey;
+  position: relative;
+  top: -15px;
+}
+.bottom-card p {
+  padding: 5px;
+}
+
+
+
+@media screen and ( max-width: 750px) {
+  .header-container {
+    width: 100%;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-around;
+  }
+  .main-menu {
+    display: none;
+  }
+  .main-menu li {
+    width: 100%;
+    display: block;
+    font-size: 12px;
+  }
+  .main-menu a {
+    display: block;
+    padding: 8px;
+  }
+  .toggle-button {
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    color: #000;
+    margin-top: 20px;
+  }
+    .toggle-button:after {
+      content: attr(data-open);
+      display: block;
+    }
+
+    #menu-checkbox:checked + nav[role="navigation"] .main-menu {
+      display: block;
+    }
+    #menu-checkbox:checked + nav[role="navigation"] .toggle-button::after {
+      content: attr(data-close);
+    }
+    .header-container a{
+      margin-right: -65px;
+    }
+    .main-menu {
+      position: relative;
+      top: 20px;
+      right: 100px;
+    }
