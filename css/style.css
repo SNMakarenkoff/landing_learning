@@ -248,3 +248,37 @@ nav {
       top: 20px;
       right: 100px;
     }
+    .top-slide {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+    .top-slide h2 {
+      font-size: 32px;
+    }
+    .top-slide p {
+    font-size: 16px;
+}
+  .specialize-container p {
+    font-size: 16px;
+  }
+  .specialize-cards {
+    display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+    flex-direction: column;
+  }
+  .bottom-card {
+    width: 250px;
+    margin: 0 auto;
+  }
+  .card {
+    padding: 11px;
+    width: 223px;
+    height: 325px;
+  }
+  .posts {
+    width: 90%;
+    display: grid;
+    grid-template-columns: auto;
+}
+}
